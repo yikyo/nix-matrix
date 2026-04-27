@@ -1,0 +1,34 @@
+## MACOS相关命令
+
+### 安装nix
+```bash
+curl -sSfL https://artifacts.nixos.org/nix-installer | sh -s -- install --enable-flakes
+```
+
+### 安装brew
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+### 安装nix-darwin
+```bash
+sudo nix run nix-darwin/nix-darwin-25.11#darwin-rebuild -- switch --flake .#workstation
+```
+
+### 部署
+```bash
+sudo darwin-rebuild switch --flake .#workstation
+```
+
+## 通用命令
+
+### 更新flake
+```bash
+nix run .#write-flake
+```
+
+### 格式化
+```bash
+nix fmt
+```
+
