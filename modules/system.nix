@@ -20,5 +20,15 @@
 
       time.timeZone = "Asia/Shanghai";
     };
+
+    nixos = {
+      networking = {
+        firewall = {
+          enable = true;
+        };
+        useDHCP = false;
+        useNetworkd = true;
+      };
+    };
   };
 }

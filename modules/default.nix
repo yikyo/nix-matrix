@@ -3,8 +3,16 @@
   _module.args.__findFile = den.lib.__findFile;
 
   den.default = {
-    nixos.system.stateVersion = "25.11";
+    nixos = {
+      system.stateVersion = "25.11";
+      boot.kernel.sysctl = {
+        "net.core.default_qdisc" = "fq";
+        "net.ipv4.tcp_congestion_control" = "bbr";
+      };
+    };
+
     darwin.system.stateVersion = 6;
+
     homeManager.home.stateVersion = "25.11";
 
     includes = [
