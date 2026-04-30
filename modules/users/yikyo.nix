@@ -5,10 +5,6 @@
       <programs/git>
       <programs/vim>
       <programs/starship>
-
-      <homebrew/default>
-      <dock/default>
-      <finder/default>
     ];
   };
 }

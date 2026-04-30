@@ -3,13 +3,14 @@
   _module.args.__findFile = den.lib.__findFile;
 
   den.default = {
-    nixos = {
-      system.stateVersion = "25.11";
-      boot.kernel.sysctl = {
-        "net.core.default_qdisc" = "fq";
-        "net.ipv4.tcp_congestion_control" = "bbr";
+    os = {
+      home-manager = {
+        useGlobalPkgs = true;
+        useUserPackages = true;
       };
     };
+
+    nixos.system.stateVersion = "25.11";
 
     darwin.system.stateVersion = 6;
 
@@ -23,11 +24,5 @@
     ];
   };
 
-  den.schema.host = {
-    home-manager = {
-      enable = true;
-      useGlobalPkgs = true;
-      useUserPackages = true;
-    };
-  };
+  den.schema.user.classes = [ "homeManager" ];
 }

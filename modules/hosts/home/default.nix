@@ -11,4 +11,11 @@
       <home/hardware>
     ];
   };
+
+  den.aspects.yikyo = {
+    provides.home = {
+      includes = [
+      ];
+    };
+  };
 }
