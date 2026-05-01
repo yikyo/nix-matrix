@@ -3,13 +3,6 @@
   _module.args.__findFile = den.lib.__findFile;
 
   den.default = {
-    os = {
-      home-manager = {
-        useGlobalPkgs = true;
-        useUserPackages = true;
-      };
-    };
-
     nixos.system.stateVersion = "25.11";
 
     darwin.system.stateVersion = 6;

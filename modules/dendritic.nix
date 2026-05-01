@@ -13,7 +13,7 @@
     };
 
     den = {
-      url = "github:vic/den";
+      url = "github:denful/den";
     };
 
     flake-file = {

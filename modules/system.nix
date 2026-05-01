@@ -19,6 +19,11 @@
       };
 
       time.timeZone = "Asia/Shanghai";
+
+      home-manager = {
+        useGlobalPkgs = true;
+        useUserPackages = true;
+      };
     };
 
     nixos = {
