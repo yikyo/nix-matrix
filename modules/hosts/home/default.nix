@@ -5,7 +5,7 @@
 
   den.aspects.home = {
     includes = [
-      <system/default>
+      <systems/default>
 
       <home/custom>
       <home/hardware>

@@ -5,7 +5,7 @@
 
   den.aspects.workstation = {
     includes = [
-      <system/default>
+      <systems/default>
     ];
   };
 

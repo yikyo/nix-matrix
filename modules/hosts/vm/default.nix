@@ -8,7 +8,7 @@
       <vm/custom>
       <vm/hardware>
 
-      <system/default>
+      <systems/default>
 
       <services/openssh>
     ];

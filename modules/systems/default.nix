@@ -1,5 +1,6 @@
+{ __findFile, ... }:
 {
-  den.aspects.system._.default = {
+  den.aspects.systems._.default = {
     os = {
       documentation.enable = false;
 
@@ -39,5 +40,9 @@
         useNetworkd = true;
       };
     };
+
+    includes = [
+      <systems/sops>
+    ];
   };
 }

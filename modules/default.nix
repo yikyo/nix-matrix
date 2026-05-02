@@ -1,4 +1,9 @@
-{ inputs, den, ... }:
+{
+  inputs,
+  den,
+  __findFile,
+  ...
+}:
 {
   _module.args.__findFile = den.lib.__findFile;
 
@@ -10,10 +15,10 @@
     homeManager.home.stateVersion = "25.11";
 
     includes = [
-      den.provides.hostname
-      den.provides.mutual-provider
-      den.provides.primary-user
-      den.provides.define-user
+      <den/hostname>
+      <den/mutual-provider>
+      <den/primary-user>
+      <den/define-user>
     ];
   };
 

@@ -34,7 +34,6 @@
   perSystem = {
     treefmt = {
       projectRootFile = "flake.nix";
-      settings.global.excludes = [ "modules/systems/sops/secrets.yaml" ];
       programs = {
         nixfmt.enable = true;
         keep-sorted.enable = true;
