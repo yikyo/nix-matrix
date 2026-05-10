@@ -43,6 +43,7 @@
 
     includes = [
       <systems/sops>
+      <systems/font>
     ];
   };
 }
