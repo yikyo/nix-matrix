@@ -2,8 +2,9 @@
 {
   den.aspects.programs.default = {
     includes = [
-      <programs/lsd>
+      <programs/bat>
       <programs/git>
+      <programs/lsd>
       <programs/starship>
       <programs/vim>
     ];
