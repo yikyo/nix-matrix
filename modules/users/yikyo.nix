@@ -8,9 +8,7 @@
       };
 
     includes = [
-      <programs/git>
-      <programs/vim>
-      <programs/starship>
+      <programs/default>
     ];
   };
 }
