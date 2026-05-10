@@ -1,6 +1,6 @@
 { __findFile, den, ... }:
 {
-  den.aspects.programs._.starship = {
+  den.aspects.programs.starship = {
     includes = [
       (den.provides.user-shell "zsh")
     ];

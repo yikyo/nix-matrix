@@ -1,5 +1,5 @@
 {
-  den.aspects.programs._.vim = {
+  den.aspects.programs.vim = {
     homeManager.programs.vim = {
       enable = true;
     };

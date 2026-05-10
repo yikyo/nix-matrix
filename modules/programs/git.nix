@@ -1,5 +1,5 @@
 {
-  den.aspects.programs._.git = {
+  den.aspects.programs.git = {
     homeManager.programs.git = {
       enable = true;
       settings.init.defaultBranch = "master";

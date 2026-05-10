@@ -1,5 +1,5 @@
 {
-  den.aspects.dock._.default = {
+  den.aspects.dock.default = {
     darwin = {
       system.defaults.dock = {
         autohide = true;

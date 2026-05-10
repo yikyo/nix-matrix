@@ -5,7 +5,7 @@
     inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  den.aspects.systems._.sops = {
+  den.aspects.systems.sops = {
     nixos = {
       imports = [
         inputs.sops-nix.nixosModules.sops

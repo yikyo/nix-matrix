@@ -1,5 +1,5 @@
 {
-  den.aspects.home._.hardware = {
+  den.aspects.home.hardware = {
     nixos =
       {
         config,

@@ -1,5 +1,5 @@
 {
-  den.aspects.vm._.custom = {
+  den.aspects.vm.custom = {
     nixos = {
       boot.loader = {
         efi.canTouchEfiVariables = true;

@@ -1,6 +1,6 @@
 { __findFile, ... }:
 {
-  den.aspects.homebrew._.default = {
+  den.aspects.homebrew.default = {
     darwin = {
       homebrew = {
         enable = true;

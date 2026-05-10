@@ -1,5 +1,5 @@
 {
-  den.aspects.finder._.default = {
+  den.aspects.finder.default = {
     darwin = {
       system.defaults.finder = {
         AppleShowAllExtensions = true;

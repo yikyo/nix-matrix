@@ -23,4 +23,6 @@
   };
 
   den.schema.user.classes = [ "homeManager" ];
+  den.schema.host.strict = true;
+
 }

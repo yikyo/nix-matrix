@@ -1,6 +1,6 @@
 { __findFile, ... }:
 {
-  den.aspects.systems._.default = {
+  den.aspects.systems.default = {
     os = {
       documentation.enable = false;
 

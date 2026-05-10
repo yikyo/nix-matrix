@@ -1,5 +1,5 @@
 {
-  den.aspects.homebrew._.ghostty = {
+  den.aspects.homebrew.ghostty = {
     darwin = {
       homebrew.casks = [ "ghostty" ];
     };

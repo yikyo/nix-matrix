@@ -1,5 +1,5 @@
 {
-  den.aspects.vm._.hardware = {
+  den.aspects.vm.hardware = {
     nixos =
       {
         config,
