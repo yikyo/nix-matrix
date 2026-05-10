@@ -1,10 +1,10 @@
 { __findFile, ... }:
 {
   den.aspects.yikyo = {
-    nixos =
+    user =
       { config, ... }:
       {
-        users.users.yikyo.hashedPasswordFile = config.sops.secrets."yikyo-password".path;
+        hashedPasswordFile = config.sops.secrets."yikyo-password".path;
       };
 
     includes = [
