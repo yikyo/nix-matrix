@@ -35,13 +35,38 @@ sudo darwin-rebuild switch --flake .#workstation
 
 ## 通用命令
 
-### 更新flake
+### 更新flake配置
 ```bash
 nix run .#write-flake
+```
+
+### 更新flake
+```bash
+nix flake update
 ```
 
 ### 格式化
 ```bash
 nix fmt
+```
+
+## 秘钥管理
+
+### 生成公钥并手动写入.sops.yaml文件中
+```bash
+nix run nixpkgs#ssh-to-age -- -i /etc/ssh/ssh_host_ed25519_key.pub
+```
+
+### 首次加密
+```bash
+nix run nixpkgs#sops -- -e -i modules/systems/sops/secrets/users.yaml
+```
+
+### 更新秘钥
+```bash
+SOPS_AGE_KEY="$(sudo nix run nixpkgs#ssh-to-age -- \
+  -private-key \
+  -i /etc/ssh/ssh_host_ed25519_key)" \
+  nix run nixpkgs#sops -- updatekeys modules/systems/sops/secrets/users.yaml
 ```
 
