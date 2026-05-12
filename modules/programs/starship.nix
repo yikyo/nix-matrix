@@ -1,10 +1,6 @@
 { __findFile, den, ... }:
 {
   den.aspects.programs.starship = {
-    includes = [
-      (den.provides.user-shell "zsh")
-    ];
-
     homeManager = {
       programs.zsh = {
         enable = true;
@@ -18,9 +14,27 @@
         enableZshIntegration = true;
 
         settings = {
-          add_newline = false;
+          format = "$username@$hostname$fill[$all](grey)$line_break$directory$character";
+
+          username = {
+            style = "";
+            format = "[$user]($style)";
+          };
+
+          hostname = {
+            style = "";
+            format = "[$hostname]($style)";
+          };
+
+          fill = {
+            symbol = " ";
+          };
         };
       };
     };
+
+    includes = [
+      (den.provides.user-shell "zsh")
+    ];
   };
 }
