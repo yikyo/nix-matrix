@@ -4,6 +4,6 @@ keys:
   - &locvps-hk-1 age1kpmn99u6q59gpk8qq9ll54070yc2yhd3ms7jfvuk263vzkv9pepqghhx3u
 
 creation_rules:
-  - path_regex: ^modules/systems/sops/secrets/[^/]+\.yaml$
+  - path_regex: ^secrets/[^/]+\.yaml$
     key_groups:
       - age: [*vm, *vmiss-us-1, *locvps-hk-1]

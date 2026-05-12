@@ -18,7 +18,7 @@
         secrets = {
           "yikyo-password" = {
             key = "yikyo-password";
-            sopsFile = ./secrets/users.yaml;
+            sopsFile = ../../secrets/users.yaml;
             neededForUsers = true;
           };
         };

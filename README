@@ -59,7 +59,7 @@ nix run nixpkgs#ssh-to-age -- -i /etc/ssh/ssh_host_ed25519_key.pub
 
 ### 首次加密
 ```bash
-nix run nixpkgs#sops -- -e -i modules/systems/sops/secrets/users.yaml
+nix run nixpkgs#sops -- -e -i secrets/users.yaml
 ```
 
 ### 更新秘钥
@@ -67,6 +67,6 @@ nix run nixpkgs#sops -- -e -i modules/systems/sops/secrets/users.yaml
 SOPS_AGE_KEY="$(sudo nix run nixpkgs#ssh-to-age -- \
   -private-key \
   -i /etc/ssh/ssh_host_ed25519_key)" \
-  nix run nixpkgs#sops -- updatekeys modules/systems/sops/secrets/users.yaml
+  nix run nixpkgs#sops -- updatekeys secrets/users.yaml
 ```
 
