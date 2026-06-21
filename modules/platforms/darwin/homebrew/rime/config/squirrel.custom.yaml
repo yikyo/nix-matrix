@@ -1,0 +1,20 @@
+patch:
+  us_keyboard_layout: true
+
+  style/color_scheme: google
+  style/inline_preedit: true
+  style/horizontal: true
+  style/font_point: 14
+  style/label_font_point: 14
+  style/corner_radius: 5
+
+  # 特定App默认中/英文输入
+  app_options:
+    com.raycast.macos: # raycast
+      ascii_mode: true
+    com.googlecode.iterm2: # iterm2
+      ascii_mode: true
+    com.microsoft.VSCode: # Visual Studio Code
+      ascii_mode: true
+    com.google.Chrome: # chrome
+      ascii_mode: true

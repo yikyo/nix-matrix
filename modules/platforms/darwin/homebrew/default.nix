@@ -7,6 +7,7 @@
         onActivation.cleanup = "zap";
 
         casks = [
+          "antigravity"
           "fork"
           "google-chrome"
           "orbstack"
@@ -20,7 +21,7 @@
 
     includes = [
       <homebrew/ghostty>
-      <homebrew/squirrel-app>
+      <homebrew/rime>
     ];
   };
 }
