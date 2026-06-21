@@ -8,11 +8,11 @@
   _module.args.__findFile = den.lib.__findFile;
 
   den.default = {
-    nixos.system.stateVersion = "25.11";
+    nixos.system.stateVersion = "26.05";
 
-    darwin.system.stateVersion = 6;
+    darwin.system.stateVersion = 7;
 
-    homeManager.home.stateVersion = "25.11";
+    homeManager.home.stateVersion = "26.05";
 
     includes = [
       <den/hostname>

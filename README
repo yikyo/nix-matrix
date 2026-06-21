@@ -25,7 +25,7 @@ curl -sSfL https://artifacts.nixos.org/nix-installer | sh -s -- install --enable
 
 ### 安装nix-darwin
 ```bash
-sudo nix run nix-darwin/nix-darwin-25.11#darwin-rebuild -- switch --flake .#workstation
+sudo nix run nix-darwin/nix-darwin-26.05#darwin-rebuild -- switch --flake .#workstation
 ```
 
 ### 部署
