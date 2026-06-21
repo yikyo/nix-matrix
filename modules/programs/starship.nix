@@ -17,7 +17,8 @@
           format = "$username@$hostname$fill[$all](grey)$line_break$directory$character";
 
           username = {
-            style = "";
+            style_user = "";
+            style_root = "";
             format = "[$user]($style)";
           };
 
