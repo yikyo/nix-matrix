@@ -34,7 +34,10 @@
   perSystem = {
     treefmt = {
       projectRootFile = "flake.nix";
-      settings.global.excludes = [ "secrets/*.yaml" ];
+      settings.global.excludes = [
+        "secrets/*.yaml"
+        "modules/platforms/darwin/homebrew/rime/config/**"
+      ];
       programs = {
         nixfmt.enable = true;
         keep-sorted.enable = true;
